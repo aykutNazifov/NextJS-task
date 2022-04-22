@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   padding: 10px 20px;
-  width: ${(props) => props.width};
-  height: 80px;
+  max-width: ${(props) => props.width};
+  max-height: 80px;
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -12,6 +12,7 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   border-radius: 10px;
   transition: 0.3s all;
   cursor: pointer;
+  border: 1.5px solid transparent;
 
   &:hover {
     border: 1.5px solid #1f7efb;
